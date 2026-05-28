@@ -7,13 +7,15 @@ export default function Home() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-12">
       <div className="mb-12">
-        <h1 className="text-3xl font-bold tracking-tight">My Blog</h1>
-        <p className="mt-2 text-zinc-600 dark:text-zinc-400">
+        <h1 className="text-3xl font-bold tracking-tight text-foreground">
+          My Blog
+        </h1>
+        <p className="mt-2 text-muted">
           Thoughts on web development, TypeScript, and more.
         </p>
         <a
           href="/feed.xml"
-          className="inline-flex items-center gap-1 mt-3 text-sm text-orange-500 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
+          className="inline-flex items-center gap-1 mt-3 text-sm text-accent hover:text-accent-hover transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -29,11 +31,11 @@ export default function Home() {
       </div>
 
       {posts.length === 0 ? (
-        <p className="text-zinc-500">
+        <p className="text-muted">
           No posts yet. Add some markdown files to content/posts/.
         </p>
       ) : (
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-6">
           {posts.map((post) => (
             <PostCard key={post.slug} post={post} />
           ))}

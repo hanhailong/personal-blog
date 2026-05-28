@@ -9,18 +9,18 @@ export function PostCard({ post }: { post: PostMeta }) {
   });
 
   return (
-    <article className="group">
+    <article className="group rounded-xl border border-border bg-card-bg p-6 transition-all hover:shadow-md hover:shadow-accent/5 hover:border-accent/30">
       <Link href={`/posts/${post.slug}`} className="block">
         <time
           dateTime={post.date}
-          className="text-sm text-zinc-500 dark:text-zinc-400"
+          className="text-sm text-muted"
         >
           {formattedDate}
         </time>
-        <h2 className="mt-1 text-xl font-semibold group-hover:text-zinc-600 dark:group-hover:text-zinc-300 transition-colors">
+        <h2 className="mt-1 text-xl font-semibold group-hover:text-accent transition-colors">
           {post.title}
         </h2>
-        <p className="mt-2 text-zinc-600 dark:text-zinc-400 leading-relaxed">
+        <p className="mt-2 text-muted leading-relaxed">
           {post.excerpt}
         </p>
         {post.tags.length > 0 && (
@@ -28,7 +28,7 @@ export function PostCard({ post }: { post: PostMeta }) {
             {post.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-xs px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400"
+                className="text-xs px-2 py-0.5 rounded-full bg-tag-bg text-tag-text"
               >
                 {tag}
               </span>

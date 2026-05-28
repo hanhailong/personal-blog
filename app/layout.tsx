@@ -37,8 +37,8 @@ export default function RootLayout({
         <ThemeProvider>
           <Header />
           <main className="flex-1">{children}</main>
-          <footer className="border-t border-zinc-200 dark:border-zinc-800">
-            <div className="max-w-3xl mx-auto px-6 py-8 text-center text-sm text-zinc-500 dark:text-zinc-400">
+          <footer className="border-t border-border">
+            <div className="max-w-3xl mx-auto px-6 py-8 text-center text-sm text-muted">
               Built with Next.js &amp; Markdown
             </div>
           </footer>

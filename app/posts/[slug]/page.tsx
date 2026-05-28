@@ -41,7 +41,7 @@ export default async function PostPage({ params }: Props) {
     <div className="max-w-3xl mx-auto px-6 py-12">
       <a
         href="/"
-        className="inline-flex items-center gap-1 text-sm text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-300 transition-colors mb-8"
+        className="inline-flex items-center gap-1 text-sm text-muted hover:text-accent transition-colors mb-8"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -61,11 +61,11 @@ export default async function PostPage({ params }: Props) {
       <header className="mb-10">
         <time
           dateTime={post.date}
-          className="text-sm text-zinc-500 dark:text-zinc-400"
+          className="text-sm text-muted"
         >
           {formattedDate}
         </time>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight">
+        <h1 className="mt-2 text-3xl font-bold tracking-tight text-foreground">
           {post.title}
         </h1>
         {post.tags.length > 0 && (
@@ -73,7 +73,7 @@ export default async function PostPage({ params }: Props) {
             {post.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-xs px-2 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400"
+                className="text-xs px-2 py-0.5 rounded-full bg-tag-bg text-tag-text"
               >
                 {tag}
               </span>

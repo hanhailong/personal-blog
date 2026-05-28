@@ -2,18 +2,57 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f9fbf7;
+  --foreground: #2d3a2d;
+  --muted: #6b8a6b;
+  --accent: #4a9e6e;
+  --accent-hover: #3d865b;
+  --border: #d8e8d6;
+  --card-bg: #ffffff;
+  --tag-bg: #e6f3e6;
+  --tag-text: #4a7a52;
+  --code-bg: #eef5ee;
+  --pre-bg: #f0f4ee;
+  --pre-border: #d8e8d6;
+  --link: #3d865b;
+  --blockquote-border: #a8d0a8;
+  --blockquote-text: #5a7a5a;
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #0f1a12;
+  --foreground: #d4e4d4;
+  --muted: #6b8a6b;
+  --accent: #5db87a;
+  --accent-hover: #6fca8c;
+  --border: #1a2e1e;
+  --card-bg: #152016;
+  --tag-bg: #1a2e1e;
+  --tag-text: #8cbc8c;
+  --code-bg: #1a2e1e;
+  --pre-bg: #0f1a12;
+  --pre-border: #1a3a1e;
+  --link: #5db87a;
+  --blockquote-border: #3a6a3a;
+  --blockquote-text: #8cac8c;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-border: var(--border);
+  --color-card-bg: var(--card-bg);
+  --color-tag-bg: var(--tag-bg);
+  --color-tag-text: var(--tag-text);
+  --color-code-bg: var(--code-bg);
+  --color-pre-bg: var(--pre-bg);
+  --color-pre-border: var(--pre-border);
+  --color-link: var(--link);
+  --color-blockquote-border: var(--blockquote-border);
+  --color-blockquote-text: var(--blockquote-text);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
