@@ -8,7 +8,7 @@ export default function Home() {
     <div className="max-w-3xl mx-auto px-6 py-12">
       <div className="mb-12">
         <h1 className="text-3xl font-bold tracking-tight text-foreground">
-          My Blog
+          韩海龙 Blog
         </h1>
         <p className="mt-2 text-muted">
           Thoughts on web development, TypeScript, and more.

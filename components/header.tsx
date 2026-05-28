@@ -22,7 +22,7 @@ export function Header() {
             <path d="M12 2C8 6 2 10 2 14c0 4.4 4.5 8 10 8s10-3.6 10-8c0-4-6-8-10-12z" />
             <path d="M12 4c-2 2.5-6 5-6 8 0 3.3 2.7 6 6 6s6-2.7 6-6c0-3-4-5.5-6-8z" />
           </svg>
-          My Blog
+          韩海龙 Blog
         </Link>
         <nav className="flex items-center gap-4">
           <Link
